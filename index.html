@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body style="">
+<ul class="swt-container" id="tab-ul">
+<li id="for-tabs" class="first">Create code for tabs</li>
+<li id="for-exp" class="normal">Create code for expandables</li>
+</ul>
+<div id="tabs" class="switch" style="display: none;">
+	<div id="form-container1" class="inc-border box top-marker left-marker right-marker top-thick left-narrow right-narrow">
+		<div class="center"><label>Tab title</label><input id="cc-ttl" type="text"/></div>
+		<div class="center"><label>Tab content</label></div>
+		<div><textarea id="cc-tcnt"></textarea></div>
+		<div class="center"><input type="button" class="center" value="Generate Code" id="cc-tbtn"/></div>
+	</div>
+	<div id="code-container" class="inc-border box top-marker left-narrow-marker" style="border-top-color:#D7B9DD">
+		<div class="center"><label>Code</label></div>
+		<textarea id="code" readonly="readonly"></textarea>
+	</div>
+</div>
+<div id="exp" class="switch" style="display: none;">
+	<div id="form-container2" class="inc-border box top-marker left-marker right-marker top-thick left-narrow right-narrow">
+	<div class="center"><label>Expandable title</label><input id="cc-expttl" type="text"/></div>	
+	<div class="center"><label>Expandable content</label></div>
+	<div><textarea id="cc-expcnt"></textarea></div>
+	<div class="center"><input type="button" class="center" value="Generate Code" id="cc-ebtn"/></div>
+	</div>
+	<div id="exp-code-container" class="inc-border box top-marker left-narrow-marker" style="border-top-color:#D7B9DD">
+		<div class="center"><label>Code</label></div>
+		<textarea id="expcode" readonly="readonly"></textarea>
+	</div>
+</div>
+</body>
+</html>
