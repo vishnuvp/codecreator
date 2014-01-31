@@ -2,7 +2,7 @@ $(document).ready(function(){
 $("#tab-ul li.first").toggleClass("first active");
 $("#cc-tbtn").click(function(){
 var tabHead = '[tab: '+ $("#cc-ttl").val() +']';
-$("#code").val(tabHead + $("#cc-tcnt").val());;
+$("#code").val(tabHead + '\n\r' +$("#cc-tcnt").val());;
 
 });
 
