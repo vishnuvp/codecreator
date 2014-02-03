@@ -5,7 +5,7 @@ $("#tab-ul li.first").toggleClass("first active");
 */
 
 $("#cc-tbtn").click(function(){
-var tabHead = '[tab title="'+ $("#cc-ttl").val() +'"]';
+var tabHead = '[tab: '+ $("#cc-ttl").val() +']\n\r';
 $("#code").val(tabHead + $("#cc-tcnt").val());;
 
 });
