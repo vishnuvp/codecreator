@@ -1,6 +1,6 @@
 * {
 font-family: 'Arial';
-transition: all 200ms ease-in;
+
 }
 .box {
 margin: 5%; 
@@ -8,7 +8,7 @@ padding:1em;
 box-shadow: 0 0 5px #DBDBDB;
 }
 .inc-border:hover{
-border-top-width: 1.5em;
+border-top-color: #FF1234;
 }
 textarea {
 width: 100%;
@@ -16,6 +16,10 @@ height: 120px;
 border: 0.1em dotted #AF3412;
 border-top: none;
 
+}
+
+.tailcode {
+height: 30px;
 }
 label {
 margin: 0.5em;
@@ -56,33 +60,39 @@ input[type="button"] {
     box-shadow: 0 0 10px #DBDBDB;
 }
 /*Tabs*/
-#tab-ul li {
-  box-shadow: 0 0 5px #3D85C6;
+#tab-ul.collapsed li{ 
+box-shadow: box-shadow: 0 0 5px #3D85C6 outset;
+width: auto;
+padding:0;
+}
+#tab-ul li{
+  box-shadow: 0 0 25px #3D85C6 inset;
   color: #3D85C6;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
-  margin-right: 5%;
-  padding: 1em;
+  margin-right: 0%;
+  padding: 8em 3em;
   text-transform: uppercase;
-  transition: all 200ms ease-in;
+  transition: all 400ms ease-in;
    border-bottom: 0.3em solid #3D85C6;
+   width: 38%;
+   margin:1%;
+   text-align: center;
 }
-ul#tab-ul {
-  margin-left: 24%;
-}
+
 #tab-ul li.active {
   box-shadow: 0 0 5px #FF1234;
   color: #FF8989;
    border-bottom: 0.3em solid #FF1234;
 }
 #tab-ul li.active:hover { 
-  box-shadow: 0 0 10px #FF1234;
+  box-shadow: 0 0 10px #FF1234 inset;
 
 }
-#tab-ul li.normal:hover {
+#tab-ul li.normal:hover, #tab-ul li.first:hover {
 border-bottom-width:0;
-  box-shadow: 0 0 5px #FF8901;
+  box-shadow: 0 0 5px #FF8901 inset;
   color: #FF8901;
    border-bottom: 0.3em solid #FF8901;
 }
