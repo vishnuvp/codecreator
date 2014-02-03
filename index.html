@@ -7,9 +7,11 @@
 <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body style="">
-<ul class="swt-container" id="tab-ul">
+<ul class="swt-container expanded" id="tab-ul">
 <li id="for-tabs" class="first">Create code for tabs</li>
 <li id="for-exp" class="normal">Create code for expandables</li>
+<li id="for-tbl" class="normal">Create code for table rows</li>
+<li id="for-bro" class="normal">Create code for brochure links</li>
 </ul>
 <div id="tabs" class="switch" style="display: none;">
 	<div id="form-container1" class="inc-border box top-marker left-marker right-marker top-thick left-narrow right-narrow">
@@ -20,7 +22,7 @@
 	</div>
 	<div id="code-container" class="inc-border box top-marker left-narrow-marker" style="border-top-color:#D7B9DD">
 		<div class="center"><label>Code</label></div>
-		<textarea id="code" readonly="readonly"></textarea>
+		<textarea id="code" class="click2copy" readonly="readonly"></textarea>
 	</div>
 </div>
 <div id="exp" class="switch" style="display: none;">
@@ -32,7 +34,39 @@
 	</div>
 	<div id="exp-code-container" class="inc-border box top-marker left-narrow-marker" style="border-top-color:#D7B9DD">
 		<div class="center"><label>Code</label></div>
-		<textarea id="expcode" readonly="readonly"></textarea>
+		<textarea id="expcode" class="click2copy" readonly="readonly"></textarea>
+	</div>
+</div>
+<div id="tbl" class="switch" style="display: none;">
+	<div id="form-container3" class="inc-border box top-marker left-marker right-marker top-thick left-narrow right-narrow">
+	<div class="center"><label>Row 1 img</label><input id="cc-rw1img" type="text"/></div>	
+	<div class="center"><label>Row 1 content</label><input id="cc-rw1cnt" type="text"/></div>	
+	<div class="center"><input type="button" class="center" value="Generate Code" id="cc-tblbtn"/></div>
+	</div>
+	
+	<div id="tbl-code-container" class="inc-border box top-marker left-narrow-marker" style="border-top-color:#D7B9DD">
+		<div class="center"><label>Code - Pre Row Wrapper</label></div>
+		<textarea readonly="readonly" class="click2copy tailcode">
+		&lt;table class="custom-533bnk036-tbl"&gt;&lt;tbody&gt;
+		</textarea>
+		<div class="center"><label>Row Code</label></div>
+		<textarea id="tblcode" class="click2copy" readonly="readonly"></textarea>
+		<div class="center"><label>Code - Post Row Wrapper</label></div>
+		<textarea readonly="readonly" class="click2copy tailcode">
+		&lt;/tbody&gt;&lt;/table&gt;
+		</textarea>
+	</div>
+</div>
+<div id="bro" class="switch" style="display: none;">
+	<div id="form-container4" class="inc-border box top-marker left-marker right-marker top-thick left-narrow right-narrow">
+	<div class="center"><label>Brochure Link</label><input id="cc-brolink" type="text"/></div>	
+	<div class="center"><label>Borchure Title</label><input id="cc-brottl" type="text"/></div>	
+	<div class="center"><input type="button" class="center" value="Generate Code" id="cc-brobtn"/></div>
+	</div>
+	
+	<div id="bro-code-container" class="inc-border box top-marker left-narrow-marker" style="border-top-color:#D7B9DD">
+		<div class="center"><label>Code</label></div>
+		<textarea id="brocode" class="click2copy" readonly="readonly"></textarea>
 	</div>
 </div>
 </body>
